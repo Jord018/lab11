@@ -19,7 +19,7 @@ const store = useMessageStore()
 function saveOrganizer() {
   OrganizerService.saveOrganizer({ ...organizer.value, image: images.value[0] })
     .then((response) => {
-      router.push({ name: 'event-list-view' })
+      router.push({ name: 'organizer-detail-view', params: { id: response.data.id } })
       store.updateMessage(
         'You are successfully added a new organizer: ' + response.data.name,
       )

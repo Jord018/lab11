@@ -16,5 +16,11 @@ export default {
   },
   getOrganizers() {
     return apiClient.get('/organizers')
+  },
+  getOrganizersPage(perPage: number, page: number) {
+    return apiClient.get('/organizers?_limit=' + perPage + '&_page=' + page)
+  },
+  getOrganizer(id: number) {
+    return apiClient.get('/organizers/' + id)
   }
 }

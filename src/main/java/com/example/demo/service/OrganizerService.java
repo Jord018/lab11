@@ -9,5 +9,6 @@ import com.example.demo.entity.Organizer;
 public interface OrganizerService {
     List<Organizer> getAllOrganizer();
     Page<Organizer> getOrganizer(Integer page, Integer pageSize);
+    Organizer getOrganizer(Long id);
     Organizer save(Organizer organizer);
 }

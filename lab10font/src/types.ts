@@ -16,6 +16,7 @@ export interface Organizer {
     name: string
     address?: string
     image?: string
+    ownEvents?: Event[]
   }
 
 

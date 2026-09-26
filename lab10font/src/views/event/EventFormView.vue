@@ -11,10 +11,7 @@ import ImageUpload from '@/components/ImageUpload.vue';
 
 const event = ref<Event>({
   id: null,
-  category: {
-    id: 0,
-    name: ''
-  },
+  category: '',
   title: '',
   description: '',
   location: '',

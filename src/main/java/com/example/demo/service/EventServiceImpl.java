@@ -47,9 +47,6 @@ public class EventServiceImpl implements EventService{
         if (event.getOrganizer() == null || event.getOrganizer().getId() == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The organizer id is required");
         }
-        if (event.getParticipants() == null || event.getParticipants().size() < 3) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Each event must have at least 3 participants");
-        }
         Organizer organizer = organizerDao.findById(event.getOrganizer().getId())
                 .orElseThrow(() -> new ResponseStatusException(
                         HttpStatus.NOT_FOUND, "Organizer not found"));

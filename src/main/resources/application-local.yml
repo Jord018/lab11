@@ -1,0 +1,8 @@
+supabase:
+  storage:
+    endpoint: https://gezfkixyqhtjixfhmqqm.storage.supabase.co/storage/v1/s3
+    endpoint_output: https://gezfkixyqhtjixfhmqqm.supabase.co/storage/v1/object/public/lab
+    bucket: lab
+    region: ap-northeast-2
+    accessKey: f7fbd2d0da86cdf7b5f640b3c3465513
+    secretKey: 2fc85bcb0ed7ae8cca993d6be41f951b6ec1c319ecad06db3aca741553c97cfd
